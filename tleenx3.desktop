@@ -8,5 +8,5 @@ Icon=/usr/share/tleenx3/pixmaps/tleenx.png
 MiniIcon=/usr/share/tleenx3/pixmaps/tleenx.png
 Terminal=false
 Type=Application
-Categories=Network;InstantMessaging;
+Categories=GTK;Network;InstantMessaging;
 # vi: encoding=utf-8
