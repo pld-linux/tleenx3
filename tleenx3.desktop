@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=TleenX3
+Comment=Tlen.pl client for gtk+2
+Comment[pl]=Klient Tlen.pl dla gtk+2
+Exec=tleenx3 
+Icon=/usr/share/tleenx3/pixmaps/tleenx.png
+MiniIcon=/usr/share/tleenx3/pixmaps/tleenx.png
+Terminal=false
+Type=Application
+# vi: encoding=utf-8

@@ -1,0 +1,34 @@
+diff -Nur tleenx3.orig/Makefile.am tleenx3/Makefile.am
+--- tleenx3.orig/Makefile.am	Sat Nov  8 20:58:49 2003
++++ tleenx3/Makefile.am	Sat Nov  8 21:04:23 2003
+@@ -18,6 +18,17 @@
+ 	  done \
+ 	fi
+ 
++install-man-local:
++	@$(NORMAL_INSTALL)
++	if test -f $(srcdir)/*.1; then \
++	  $(mkinstalldirs) $(DESTDIR)$(mandir)/man1; \
++	  for mans in $(srcdir)/*.1; do \
++	    if test -f $$mans; then \
++	      $(INSTALL_DATA) $$mans $(DESTDIR)$(mandir)/man1; \
++	    fi \
++	  done \
++	fi
++
+ dist-hook:
+ 	if test -d pixmaps; then \
+ 	  mkdir $(distdir)/pixmaps; \
+@@ -27,4 +38,11 @@
+ 	    fi \
+ 	  done \
+ 	fi
+-
++	  if test -f *.1; then \
++	    mkdir $(distdir)/man/man1; \
++	    for mans in $(srcdir)/*.1; do \
++	      if test -f $$mans; then \
++		cp -p $$mans $(distdir)/man/man1; \
++	      fi \
++	    done \
++	fi
