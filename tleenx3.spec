@@ -1,11 +1,8 @@
-
-%define		snap 20040724
-
 Summary:	Tlen.pl client for gtk+2
 Summary(pl):	Klient Tlen.pl dla gtk+2
 Name:		tleenx3
 Version:	0.1
-Release:	0.1
+Release:	1
 License:	GPL
 Group:		Applications/Communications
 Source0:	http://tleenx.sourceforge.net/%{name}-CVS.tar.gz
@@ -13,7 +10,6 @@ Source0:	http://tleenx.sourceforge.net/%{name}-CVS.tar.gz
 Source1:	http://tleenx.sourceforge.net/download/sounds/default.tar.gz
 # Source1-md5:	964761f483c1a0a1421ca6ebc0a5ed22
 Source2:	%{name}.desktop
-Patch0:		%{name}-maninst.patch
 URL:		http://tleenx.sourceforge.net/
 BuildRequires:	XFree86-libs >= 4.3.99.15
 BuildRequires:	autoconf
@@ -33,7 +29,6 @@ Jest rozpowszechniany na licencji GPL.
 
 %prep
 %setup -q -n %{name} -a1
-%patch0 -p1
 
 %build
 %{__aclocal}
