@@ -17,6 +17,8 @@ BuildRequires:	automake
 BuildRequires:	gtk+2-devel >= 2.0.0
 BuildRequires:	libtlen2-devel
 BuildRequires:	pkgconfig
+BuildRequires:	gnet-devel >= 2.0.0
+BuildRequires:	libxml2-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
