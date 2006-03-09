@@ -1,12 +1,13 @@
 Summary:	Tlen.pl client for GTK+2
 Summary(pl):	Klient Tlen.pl dla GTK+2
 Name:		tleenx3
-Version:	0.1
-Release:	2
+Version:	0.2
+%define	snap	20060309
+Release:	0.%{snap}.1
 License:	GPL
 Group:		Applications/Communications
-Source0:	http://tleenx.sourceforge.net/%{name}-CVS.tar.gz
-# Source0-md5:	c7933931adf632b1c9fd213fb9164f54
+Source0:	%{name}-cvs-%{snap}.tar.bz2
+# Source0-md5:	05208dff5ce635aff6899988cd9ee353
 Source1:	http://tleenx.sourceforge.net/download/sounds/default.tar.gz
 # Source1-md5:	964761f483c1a0a1421ca6ebc0a5ed22
 Source2:	%{name}.desktop
@@ -17,7 +18,9 @@ BuildRequires:	automake
 BuildRequires:	gtk+2-devel >= 1:2.0.0
 BuildRequires:	libtlen2-devel
 BuildRequires:	pkgconfig
+BuildRequires:	glib2-devel
 BuildRequires:	gnet-devel >= 2.0.0
+BuildRequires:	gnutls-devel
 BuildRequires:	libxml2-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
