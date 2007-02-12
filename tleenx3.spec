@@ -1,5 +1,5 @@
 Summary:	Tlen.pl client for GTK+2
-Summary(pl.UTF-8):   Klient Tlen.pl dla GTK+2
+Summary(pl.UTF-8):	Klient Tlen.pl dla GTK+2
 Name:		tleenx3
 Version:	0.2
 %define	snap	20060309
