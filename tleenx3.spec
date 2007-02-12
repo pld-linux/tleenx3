@@ -1,5 +1,5 @@
 Summary:	Tlen.pl client for GTK+2
-Summary(pl):	Klient Tlen.pl dla GTK+2
+Summary(pl.UTF-8):   Klient Tlen.pl dla GTK+2
 Name:		tleenx3
 Version:	0.2
 %define	snap	20060309
@@ -28,8 +28,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 TleenX is a Tlen.pl client written for Linux users. It is distributed
 under GPL license.
 
-%description -l pl
-TleenX to klient tlen.pl napisany z my∂l± o uøytkownikach Linuksa.
+%description -l pl.UTF-8
+TleenX to klient tlen.pl napisany z my≈õlƒÖ o u≈ºytkownikach Linuksa.
 Jest rozpowszechniany na licencji GPL.
 
 %prep
