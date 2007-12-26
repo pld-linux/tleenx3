@@ -1,10 +1,9 @@
 [Desktop Entry]
 Name=TleenX3
-Comment=Tlen.pl client for gtk+2
-Comment[pl]=Klient Tlen.pl dla gtk+2
+Comment=Tlen.pl client for GTK+2
+Comment[pl]=Klient Tlen.pl dla GTK+2
 Exec=tleenx3 
 Icon=/usr/share/tleenx3/pixmaps/tleenx.png
-MiniIcon=/usr/share/tleenx3/pixmaps/tleenx.png
 Terminal=false
 Type=Application
 Categories=GTK;Network;InstantMessaging;
